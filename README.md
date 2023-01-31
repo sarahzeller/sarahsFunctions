@@ -6,7 +6,7 @@ A set of R functions that I use often.
 
 ## Installation
 
-`remotes::install_github("szeller42/sarahsFunctions.git")`
+`remotes::install_github("szeller42/sarahsFunctions")`
 
 ## Functions
 
