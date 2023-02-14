@@ -4,7 +4,6 @@
 #'
 #' @import ggplot2
 #' @import extrafont
-#' @import Rttf2pt1
 #'
 #' @export
 #'
