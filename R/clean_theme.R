@@ -3,22 +3,12 @@
 #' Creates a custom theme for ggplot, so that all graphs have a coherent look.
 #'
 #' @import ggplot2
-#' @import extrafont
-#' @import Rttf2pt1
+#' @importFrom sysfonts font_add_google
+#' @importFrom showtext showtext_auto
+#' @import curl
+#' @import jsonlite
 #'
 #' @export
-#'
-#' @details
-#' If the fonts are not loaded, please try running the following code.
-#' `remove.packages('Rttf2pt1')`
-#' `remotes::install_version('Rttf2pt1', version = '1.3.8')``
-#' `font_import(paths = 'C:/Users/YOUR_NAME/Documents/Fonts')``
-#' `loadfonts(device = 'win')``
-#' `loadfonts()``
-#'
-#' If this still does not work, run the following line and then
-#' run the above lines again.
-#' `Sys.setenv(R_GSCMD = 'C:/Program Files/gs/gs9.55.0/bin/gswin64c.exe')`"
 #'
 #' @examples
 #' data(donut_data)
@@ -28,7 +18,9 @@
 #' clean_theme()
 
 clean_theme <- function(){
-  loadfonts() |> suppressMessages()
+  # load font
+  showtext_auto()
+
   theme_minimal() +
     theme(text = element_text(family = "Open Sans"),
           plot.title = element_text(size = 18),

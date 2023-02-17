@@ -13,10 +13,12 @@ Imports:
     dplyr,
     ggplot2,
     assertthat,
-    stringr
+    stringr,
+    sysfonts,
+    jsonlite,
+    curl
 Depends:
-    extrafont,
-    Rttf2pt1,
+    showtext,
     R (>= 2.10)
 Remotes: s3alfisc/fwildclusterboot
 Suggests: 

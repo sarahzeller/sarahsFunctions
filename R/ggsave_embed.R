@@ -6,11 +6,11 @@
 #' @param height The height of the graph. Defaults to NA.
 #'
 #' @import ggplot2
-#' @import extrafont
+#' @importFrom showtext showtext_auto
 #'
 #' @export
 
 ggsave_embed <- function(name, width = NA, height = NA){
+  showtext_auto()
   ggsave(name, width = width, height = height)
-  embed_fonts(name)
 }
