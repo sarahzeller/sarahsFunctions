@@ -3,3 +3,4 @@
 
 ^R/not-ready*
 ^LICENSE\.md$
+^\.github$
