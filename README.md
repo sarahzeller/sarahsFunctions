@@ -12,6 +12,16 @@ A set of R functions that I use often.
 
 `remotes::install_github("szeller42/sarahsFunctions")`
 
+If the fonts do not load correctly, please run the following lines:
+
+```{r}
+remove.packages('Rttf2pt1')
+remotes::install_version('Rttf2pt1', version = '1.3.8')
+font_import(paths = 'C:/Users/YOUR_NAME/Documents/Fonts')
+loadfonts(device = 'win')
+loadfonts()`
+```
+
 ## Functions
 
 -   `df_to_qmd_table` converts a `data.frame` or tibble to a qmd table.

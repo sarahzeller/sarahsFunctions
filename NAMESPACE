@@ -3,6 +3,7 @@
 export(clean_theme)
 export(df_to_qmd_table)
 export(ggsave_embed)
+import(Rttf2pt1)
 import(assertthat)
 import(extrafont)
 import(ggplot2)
