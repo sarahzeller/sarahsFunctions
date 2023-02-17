@@ -19,10 +19,10 @@
 #' @return A qmd table.
 #'
 #' @examples
-#' convert_to_qmd_table(iris[1:10,])
+#' df_to_qmd_table(iris[1:10,])
 
 
-convert_to_qmd_table <-
+df_to_qmd_table <-
   function(df,
            column_names = NA,
            align = NA){
