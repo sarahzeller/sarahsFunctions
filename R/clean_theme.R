@@ -28,6 +28,7 @@
 #' clean_theme()
 
 clean_theme <- function(){
+  loadfonts() |> suppressMessages()
   theme_minimal() +
     theme(text = element_text(family = "Open Sans"),
           plot.title = element_text(size = 18),
