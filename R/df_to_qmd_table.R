@@ -28,8 +28,9 @@ df_to_qmd_table <-
            align = NA){
 
     if (missing(column_names)) {column_names <- names(df)}
-
-    assert_that(is.character(align) | missing(align))
+    assert_that(ncol(df) == length(column_names))
+    assert_that(is.character(align) | missing(align),
+                msg = "Please list as many column names as df columns")
     if(!missing(align)) {assert_that(length(column_names) == length(align),
                                      msg = "Please adjust the length of align to the number of columns.")}
 
