@@ -16,12 +16,13 @@ Imports:
     stringr,
     sysfonts,
     jsonlite,
-    curl
+    curl,
 Depends:
     showtext,
     R (>= 2.10)
 Remotes: s3alfisc/fwildclusterboot
 Suggests: 
+    ggtext,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 LazyData: true

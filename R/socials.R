@@ -9,6 +9,8 @@
 #' @return A HTML character vector
 #'
 #' @examples
+#' library(ggplot2)
+#' library(ggtext)
 #' ggplot() +
 #'   labs(caption = socials) +
 #'   theme(plot.caption = element_textbox_simple())

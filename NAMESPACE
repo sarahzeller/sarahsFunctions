@@ -3,6 +3,7 @@
 export(clean_theme)
 export(df_to_qmd_table)
 export(ggsave_embed)
+export(socials)
 import(assertthat)
 import(curl)
 import(ggplot2)

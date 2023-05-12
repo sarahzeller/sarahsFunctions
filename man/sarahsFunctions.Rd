@@ -9,6 +9,13 @@ Often used functions.}
 \description{
 These are some functions I often use.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/szeller42/sarahsFunctions}
+}
+
+}
 \author{
 Sarah Zeller
 }
